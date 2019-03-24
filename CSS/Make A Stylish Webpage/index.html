@@ -1,0 +1,990 @@
+<!-- This is an HTML comment. It's just here for PEOPLE to read. The computer ignores it.  -->
+<!DOCTYPE HTML>
+<!--The above declaration is an instruction and also gives information regarding the type of document and the version of HTML. The above must be the first line of code in all of your HTML documents.This doesn't actually add any HTML structure or content.-->
+<html lang="en">
+<!--To begin adding HTML structure and content, we must first add opening and closing <html> tags.Anything between <html> and </html> will be considered HTML code.-->
+<!--Vocabulary in HTML:Angle brackets - The characters < and > are known as angle brackets.HTML element or element is the HTML code that lives inside of angle brackets. Opening tag - the first HTML tag used to start an HTML element. Closing tag - the secondng HTML tag used to end an HTML element. Closing tags have a forward slash (/) inside. Except few HTML elements, most elements consist of an opening and closing tag.-->
+<head>
+  <meta charset="UTF-8">
+  <!--By opening a <head> tag or element, we can give some information about the page. The <head> element will contain information about the page that isn't displayed directly on the actual web page.-->
+  <!--Specify the character encoding for the HTML document-->
+  <!--This is the title of the page. it appears on the top of our browser.The title can be specified directly inside of the <head> element, by using a <title> element.-->
+  <title>Alivelu Duvvuri's Project</title>
+  <link rel = "stylesheet" href = "style.css" media= "all">
+  <!--The above line of code links an external style sheet to this html document-->
+</head>
+<!--Closing head tag-->
+<body>
+  <!-- Opening body tag-->
+  <!--Browser displays content.Before adding content, we have to add a body to the HTML file. Once the file has a body, many different types of content can be added within the body, like text, images, buttons.This has meta data, java script , css included in this section.-->
+  <!--Above lines of code is sometimes referred to as "boilerplate code.Boilerplate code" is used to describe the basic HTML code required to begin creating a web page.-->
+  <div id = "container">
+    <!-- The <h1> tag stands for "heading 1". Heading tags go all the way up to <h6>. Lower numbered headings indicate content that is more important. -->
+    <header>
+      <nav>
+        <div>
+          <img src="html-css-logo.png" alt ="logo" width="100" class="tm-logo">
+          <h1>My Notes on HTML, CSS, PYTHON</h1>
+
+        </div>
+        <div id="top_nav">
+          <ul id=pagelinks>
+            <!--Means you want your home button in red color-->
+            <li> <a class="black" href= "index.html">Home </a></li>
+            <!--# takes back to the same page again-->
+            <!--<li> <a href= "#">HTML </a></li>-->
+            <!--Give the page name in place of "#" i.e HTML.html-->
+            <li> <a  class="black" href= "HTML.html">HTML </a></li>
+            <li> <a class="black" href= "CSS.html">CSS </a></li>
+            <li> <a class="black" href= "PYTHON.html">Python</a></li>
+            <li> <a class="black" href= "ABOUTUS.html">AboutUs</a></li>
+            <li> <a class="black" href= "CONTACTUS.html">ContactUs</a></li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+    <!--Divider between header and body-->
+    <div class="divider">
+    </div>
+  </div>
+      <!-- <img src="html-css-logo.png" alt ="logo" width="110" class="tm-logo">-->
+      <!--Give a class tm-logo to float right or left-->
+      <!--Add corresponding code in css-->
+      <!-- <h1>My Notes on HTML, CSS & PYTHON</h1> -->
+      <!-- The <h1> tag stands for "heading 1". Heading tags go all the way up to <h6>. Lower numbered headings indicate content that is more important. -->
+      <!-- <nav>
+        <ul>
+          <li> <a href= "#">Home </a></li>-->
+          <!--# takes back to the same page again-->
+
+          <!-- <li> <a href= "#">HTML </a></li>
+          <li> <a href= "#">CSS </a></li>
+          <li> <a href= "#">Python</a></li>
+          <li> <a href= "#">About Us</a></li>
+          <li> <a href= "#">Contact Us</a></li>
+        </ul>
+      </nav>
+    </header> -->
+  <div class="lesson">
+    <h2>Basics of Web and HTML</h2>
+    <div class="concept">
+      <div class="concept-title">
+        <h3>The World Wide Web</h3>
+      </div>
+      <div class="concept-description">
+        <!-- Notice how I removed the <em> tags from the
+      paragraph below. I didn't need to do this, I just
+      wanted to show how you can use a span and some
+      styling to achieve the same effect. -->
+        <p>
+          World wide web is a collection of <span class="italic">HTML</span> documents.These documents are made up of something called <em>HTML</em>, which stands for <em>HyperTextMarkup Language</em>.<em>HTML</em> glues all sorts of files like documents, images, videos etc.The links between these pages are called <em>Hyper Links</em>.Web was invented in 1990.Main type of document on the web is <em>HTML</em>.All of these things/files like Microsoft word, PDF, Plain Text, music, videos, images exist on the web.
+        </p>
+        <!--<p>text</p> Defines a paragraph. The content of the <p> element is in a "box"-->
+        <span class="italic">The major pieces are:</span>
+        <ul>
+          <!--To create a unordered list using HTML, you can use the <ul> element. The <ul> element cannot hold raw text and cannot automatically format raw text with bullet points. Individual list items must be added to the unordered list using the <li> element.Unordered list. Ex: grocery list etc.-->
+          <li>Person to operate the <span class="italic">Computer (you/me)</span>.</li>
+          <li>Computer/Computer running a <span class="italic">Web broswer</span> like Mozilla Firefox/ Internet Explorer/ Chrome etc.</li>
+          <li>The <span class="italic">Internet</span> (Which is the world's largest computer network. The internet uses HTTP to communicate with you, your broswer and servers.</li>
+          <li><span class="italic">Servers</span></li>
+        </ul>
+        <p>
+          <!--Everything as a paragraph use p tag-->
+          <span class="italic">Browser</span> is a program that runs on <span class="italic">computer</span> to display files found on the web.
+          Generally the <span class="italic">browser</span> makes requests via the <span class="italic">internet</span> to <span class="italic">servers</span>.
+          These requests are using a protocol called <span class="italic">http</span> and the <span class="italic">servers</span> respond with the files that the <span class="italic">browser</span> displays.
+          <span class="italic">Servers</span> are just like <span class="italic">computers</span> that host the files that makeup the web.
+          The <span class="italic">protocol</span> HTTP is a very simple protocol that your browser uses to communicate with these <span class="italic">servers</span>.
+        </p>
+      </div>
+    </div>
+    <div class="concept">
+      <div class="concept-title">
+        <h3>About HTML</h3>
+      </div>
+      <div class="concept-description">
+        <p>
+          <br>
+          <span class="bold">HTML</span> means <span class="italic">Hyper Text Markup Language</span>.
+        </p>
+      </div>
+      <div class="concept">
+        <div class="concept-title">
+          <h4>HTML is made up of :</h4>
+        </div>
+        <div class="concept-description">
+          <br>
+          <br>
+          <ol>
+            <!--In ordered lists each list item is numbered. You can create the ordered list with the <ol> element and then add individual list items to the list using <li> elements.-->
+            <li>Text content i.e what you see</li>
+            <li>Mark up i.e what the content look's like and how it's arranged</li>
+            <li>References to other documents ex: images , videos</li>
+            <li>It can be made up of Links to other pages</li>
+          </ol>
+        </div>
+      </div>
+    </div>
+    <div class="concept">
+      <div class="concept-title">
+      <h3> HTML Mark up </h3>
+      </div>
+      <div class="concept-description">
+        <p>HTML markup is made up of things called <b>tags</b>.</p>
+      </div>
+      <div class="concept">
+        <div class="concept-title">
+          <h4>About Tags</h4>
+        </div>
+        <div class="concept-description">
+          <p>
+            <!--Everything in a different line use <br>-->
+            Tag is structured like this:<br>
+            &lt;NAME&gt; Contents  &lt;/NAME&gt;<br>
+            <span class="italic">Opening Tag Name.....The Tag Contents(which can be actualy tags or other tags)...... Closing Tag Name</span><br>
+            <!--<NAME>         Contents          </NAME>-->
+            <!--Opening Tag     Contents         Closing Tag-->
+            The whole thing mentioned above is called as an <b>element</b>.
+          </p>
+        </div>
+        <div class="concept">
+          <div class="concept-title">
+            <h5>Bold Tag</h5>
+          </div>
+          <div class="concept-description">
+
+            <p>
+              <b>b-Tag</b> means Bold tag.Structure is like this:<br>
+              &lt;b&gt; contents  &lt;/b&gt;<br>
+              <span class="italic">opening bold tag ....   Contents..... closing bold tag</span><br>
+              <!--<b> Contents </b>-->
+              Example:<br>
+              HTML is&lt;b&gt;reasonably straightforward&lt;/b&gt;<br>
+              If you open the above code in browser it displays as below:<br>
+              HTML is <b>reasonably straightforward</b><br>
+              Note: The Phrase in between bold tag appears on browser in bold letters.
+            </p>
+          </div>
+        </div>
+        <div class="concept">
+          <div class="concept-title">
+            <h5>Emphasis Tag</h5>
+          </div>
+          <div class="concept-description">
+            <p>
+              <b><em>em-Tag</em></b> means Emphasis tag (Italics).Structure is like this:<br>
+              &lt;em&gt; contents  &lt;/em&gt;<br>
+              <span class="italic">opening em tag ....   Contents..... closing em tag</span><br>
+              <!--<em>     contents     </em>-->
+              Example:HTML is &lt;em&gt;reasonably straightforward&lt;/em&gt;<br>
+              If you open the above code in browser it displays as below:<br>
+              Example:HTML is <span class="italic">reasonably straightforward</span><br>
+              Note: The Phrase in between em tag appears on browser in bold and italicized letters.<br>
+              When you forget the closing <b>em tag</b>, Everything after the opening em tag is italicized.<br>
+              HTML is &lt;em&gt;&lt;b&gt;reasonably straightforward.&lt;/b&gt;HTML is reasonably straightforward.<br>
+              Note:If you open the above code in browser <span class="italic">The Phrase after em tag is completely italicized</span>
+              <!--HTML is <em><b>reasonably straightforward.</b>HTML is reasonably straightforward.<br>-->
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="concept">
+        <div class="concept-title">
+          <h4>HTML Attributes:</h4>
+        </div>
+        <div class="concept-description">
+          <p>
+            Structure is like this:<br>
+            &lt;TAG ATTR = "value"&gt; contents  &lt;/TAG&gt;<br>
+            <!--<TAG ATTR = "value"> contents </TAG>-->
+            <span class="italic">Opening tag---- Attributes always equal to a value-----Closing tag</span><br>
+            Tags can have multiple attributes.
+          </p>
+        </div>
+        <div class="concept">
+          <div class="concept-title">
+            <h5>Anchor Tag</h5>
+          </div>
+          <div class="concept-description">
+            <p>
+              An example of a tag that uses an attribute is  a tag or <b>anchor tag</b>
+              Structure is like this:<br>
+              &lt;a href="value or url"&gt; derp  &lt;/a&gt;<br>
+              <!--<a href="www.reddit.com"> derp </a>-->
+              <span class="italic">opening an attribute name called href=value or url----- derp contents----closing a tag</span>.<br>
+              Example:Make the phrase "my favorite" in the following sentence "This website is my favorite" a link to udacity.com<br>
+              This website is &lt;a href = "udacity.com"&gt; my favorite &lt;/a&gt;<br>
+              If you open the above code in browser it displays as below:<br>
+              This website is <a href = "udacity.com"> my favorite </a>
+            </p>
+            <ul>
+              <li>To know more about the anchor tag<a href="https://classroom.udacity.com/nanodegrees/nd000/parts/0001345401/modules/385165862675460/lessons/3873828673/concepts/485084170923#">Click here</a></li>
+              <li>The link opens in the same window.</li>
+              <li>To open it in a new window the target attribute requires a value of _blank. The target attribute can be added directly to the opening tag of the anchor element, just like the href attribute.</li>
+              <li>To know more about the anchor tag<a href="https://classroom.udacity.com/nanodegrees/nd000/parts/0001345401/modules/385165862675460/lessons/3873828673/concepts/485084170923#" target = "_blank">Click here</a></li>
+            </ul>
+            Note:To access the links Sign in with Username and Password.
+          </div>
+        </div>
+        <div class="concept">
+          <div class="concept-title">
+            <h5>Image Tag:</h5>
+          </div>
+          <div class="concept-description">
+            <p>
+              Structure is like this:<br>
+              &lt;img src = "url"   alt = "text"&gt;<br>
+              <!--<img src = "url" alt = "text">-->
+              <span class="italic">opening img tag   source= url of the image to downlaod  alt stands for alternate</span>.<br>
+              Text means text that could display when the image doesn't load.Image tag is a void tag that means it doesn't have contents.
+              To view HTML structure as an image:<br>
+              &lt;img src= "https://openlab.citytech.cuny.edu/clarkeadv2450/files/2012/08/html-structure.jpg" alt = "Sorry Try Again"&gt;<br>
+              The above HTML code on browser displays an image as below.<br>
+              <img src= "https://openlab.citytech.cuny.edu/clarkeadv2450/files/2012/08/html-structure.jpg" alt = "Sorry Try Again"/>
+            </p>
+          </div>
+        </div>
+        <div class="concept">
+          <div class="concept-title">
+            <h5>Void tag or br tag</h5>
+          </div>
+          <div class="concept-description">
+            <p>
+              <b>br tag</b> is void tag stands for break<br>
+              Syntax:&lt;br&gt;<br>
+              Example:Hello everyone!&lt;br&gt; We're using two lines now!<br>
+              In the browser the above HTML code displays as below.<br>
+              Hello everyone! <br> We're using two lines now!
+            </p>
+          </div>
+        </div>
+        <div class="concept">
+          <div class="concept-title">
+            <h5>Paragraph tag</h5>
+          </div>
+          <div class="concept-description">
+            <p>
+              Another way of using line break is <b>p tag</b>. "p" tag stands for paragraph.<br>
+              &lt;p&gt; contents  &lt;/p&gt;<br>
+              <!--<p> contents</p>-->
+              &lt;p&gt;Hello everyone!&lt;/p&gt;&lt;p&gt;We're using two lines now!&lt;/p&gt;<br>
+              If you open the above code in browser it displays as below:
+              Example:
+            </p>
+            <p>Hello everyone!</p>
+            <p>We're using two lines now!</p>
+            Two different ways of making new line are:br tag and p tag.
+          </div>
+        </div>
+        <div class="concept">
+          <div class="concept-title">
+            <h4>Inline vs Block Elements</h4>
+          </div>
+          <div class="concept-description">
+            <p>
+              HTML elements are either inline or block. Block elements form an "invisible box" around the content inside of them."br" tag is called as inline and it's just ending a line.<br>
+              Inline elements are just text.<br>
+              Ex: b tag, img tag, em tag.<br>
+              "p" tag is block i.e it creates invisible box around text contains height and width.<br>
+              Example: p tag
+            </p>
+          </div>
+        </div>
+        <div class="concept">
+          <div class="concept-title">
+            <h4>Container elements:</h4>
+          </div>
+          <div class="concept-description">
+            <p>
+              Elements that do nothing but contain stuff inside themselves.
+              The purpose of these elements will not be clear yet.
+              But in the next lesson you will see how these elements can be used.
+              i.e to create web pages with complex structures.<br>
+              Ex:Span and Div
+            </p>
+            <ul>
+              <li><b>Span</b> is inline element</li>
+              <!--<span> text </span>-->
+              <li><b>Div</b> is block element</li>
+              <!--<div> text </div>-->
+            </ul>
+            Above are the ways to attach styles to them.
+            <p>
+              Span class equals to foo and Div class equals to bar. These are related to CSS class.<br>
+              &lt;span class = "foo"&gt;<br>
+              &lt;div class = "bar";&gt;
+            </p>
+            <ul>
+              <li> a, span, br, img , strong are <b>inline</b> elements</li>
+              <li>while div, p, and form are <b>block</b> elements.</li>
+            </ul>
+            <p>
+              In HTML particularly, the indentation level increases when an idea begins and decreases when an idea is finished.
+              Let's look at the above lines of code.<br>
+              Note: Please refer to above image.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="lesson">
+    <h2>Stage 1: Make your web page</h2>
+    <div class="concept">
+      <div class="concept-title">
+        <h3>Imp Things</h3>
+      </div>
+      <div class="concept-description">
+        <p>
+          <br>
+          For a web page to look a lot nicer we have to add style using something called CSS.
+          This stage 1 lesson will be an important foundational learning experience for any programming.
+          i.e
+        </p>
+        <ol>
+          <!--In ordered lists each list item is numbered. You can create the ordered list with the <ol> element and then add individual list items to the list using <li> elements.-->
+          <li>What it means to "write code"</li>
+          <li>Why programmers hate unnecessary repetition</li>
+          <li>How the code that programmers write can have structure and how computers read and understand that structure</li>
+          <li>The importance (and pain) of syntax requirements</li>
+          <li>Build comfort with programming tools before learning a more powerful (and potentially challenging) programming language</li>
+          <li>Experience the thrill of writing code to tell a computer what to do and then watching the computer actually do it--></li>
+        </ol>
+        <p>
+          Navigate to Wikipedia web page as it has text, lot of images of different sizes and shapes.
+          If you look at the innerstructure of the Google chrome browser page as it has great developer tools.
+          Or you van use any other web browser and navigate to Developer tools then an additional panel will open.
+          This panel shows the structure of the page.
+          In the panel if you move your cursor over lines or elements then you can notice that parts of the webpage get highlighted.
+          If you click on triangle in the panel it will expand and gives us a tree like structure.
+          A separate panel is also available which is called <em>CSS</em>.
+          By observing wikipedia page and structure in panel you can understand the following:
+        </p>
+        <ol>
+          <li>All elements are rectangle</li>
+          <li>You can read the same text as on the page</li>
+        </ol>
+      </div>
+    </div>
+    <div class="concept">
+      <div class="concept-title">
+        <h3>Tree like structure:</h3>
+      </div>
+      <div class="concept-description">
+        <p>
+          Font size and border width can be known by clicking on the lines or elements in panel.<br>
+          The important things to know are:
+        </p>
+        <ol>
+          <li>HTML and CSS are both "languages"</li>
+          <li>HTML controls the "structure" of a web page</li>
+          <li>CSS controls the "style" of a page (how it looks).</li>
+        </ol>
+        <p>
+          When programmers talk about the <em>"DOM" (Document Object Model)</em> they are talking about the tree-like structure of a page.
+          To learn more about what a "tree-like structure" means, read the first two paragraphs of the wikipedia article on Tree Structures.
+          A tree structure or tree diagram is a way of representing the hierarchical nature of a structure in a graphical form. It is named a "tree structure" because the classic representation resembles a tree, even though the chart is generally upside down compared to an actual tree, with the "root" at the top and the "leaves" at the bottom.
+          A tree structure is conceptual, and appears in several forms. For a discussion of tree structures in specific fields, see Tree (data structure) for computer science: insofar as it relates to graph theory, see tree (graph theory), or also tree (set theory). Other related pages are listed below.
+        </p>
+      </div>
+    </div>
+    <div class="concept">
+      <div class="concept-title">
+        <h3>HTML-CSS-DOM</h3>
+      </div>
+      <div class="concept-description">
+        <p>
+          <b>HTML</b> : HyperText Markup Language<br>
+          The standard markup language used to create web pages.<br>
+          <b>CSS</b> : Cascading Style Sheets<br>
+          Style sheet language used for describing the look and formatting of a document written in a markup language.<br>
+          <b>DOM</b> : Document Object Model<br>
+          A cross-platform and language-independent convention for representing and interacting with objects(Markup languages) in HTML .
+          The nodes of every document are organized in a tree structure, called the DOM tree.
+        </p>
+        <ul>
+          <li>Html has specific syntax and rules.</li>
+          <li>Basic word in html language is <em>tag</em>.</li>
+          <li>The Browser turns html tags into elements that form a tree.</li>
+          <li>It knows how to do that because of document model DOM.</li>
+          <li>DOM is a standard convention for representing and interacting in HTML.</li>
+          <li>So the tree in developer tools in chrome browser is dom tree the browser built from an HTML ducument.</li>
+          <li>Each html tag creates an element in DOM that the browser uses to display the page.</li>
+        </ul>
+        <p>
+          An element is created from starting tag to ending tag and everything in between is <em>content</em>.<br>
+          &lt;tag&gt;  content   &lt;/tag&gt;<br>
+          Syntax: opening tag     content       closing tag<br>
+          The <em>content</em> can be empty, it can be <em>text</em> or <em>element</em>.
+          Each tag has a name or type that defines what kind of element will be created.
+          I.e will it be a paragraph?, An image?, Or Just a document division..?
+          Each tag also can have attributes with values.<br>
+          Syntax: &lt;h1 class = "article"&gt;   &lt;/h1&gt;
+          <!--   <h1 class = "article">   </h1>   -->
+          For example above we have an h1 tag with a class <em>attribute</em> and value of the attribute is <em>article</em>.
+          So the document written in HTML defines the structure and content of the page.
+        </p>
+      </div>
+    </div>
+  <div class="lesson">
+    <h2>Basics Of CSS</h2>
+    <div class="concept">
+      <div class="concept-title">
+        <h3>About CSS</h3>
+      </div>
+      <div class="concept-description">
+        <p>
+          To define the style you have to use another language <em>CSS</em>.
+          CSS allows to use specific syntax and rules to change how elements look on a page, size of font, the color, back ground, position, borders and on and on.
+          For example you can use CSS on all h1 elements that belong to class Article should have the text color dark blue.
+          To tie structure and style together the html document can provide thr browser with information on what style to use and where to get it.
+          Since there are specific rules for how these elements work once you know the language you can look at html code and get a good understanding of  how the page is organized and what it can look like.
+          Everything on a web page is a <em>box</em>.
+          When we uncheck border- radius the circle becomes a <em>square</em>.
+          We define boxes with <em>div</em> tag.
+        </p>
+      </div>
+    </div>
+  </div>
+  <div class="lesson">
+    <h2>Stage 2:Using CSS code to add style</h2>
+    <div class="concept">
+      <div class="concept-title">
+        <h3>Focus:</h3>
+      </div>
+      <div class="concept-description">
+        <p>
+          From the above html code we have a webpage that has structure. But it doesn't look good at all. So in this lesson we learn how to use style to your page.
+          Avoiding repetetion in all areas of programming is very important.Here we learn how CSS avoids repetetion of the program
+        </p>
+      </div>
+    </div>
+    <div class="concept">
+      <div class="concept-title">
+        <h3>Instructions</h3>
+      </div>
+      <div class="concept-description">
+        <p>
+          First login to Udacity.com by<a href = "https://www.udacity.com/#"> Clicking here.</a>
+          Download the css-demo.zip file by <a href="https://classroom.udacity.com/nanodegrees/nd000/parts/0001345402/modules/383612889175460/lessons/4131369051/concepts/36278486920923#">clicking here.</a>
+          To extract the files for Windows:
+          Find the file that was downloaded, right-click on the file and select "Extract All" to unzip.
+          This should create a folder called css-demo.
+          If you haven't already, download a <a href = "https://classroom.udacity.com/nanodegrees/nd000/parts/0001345402/modules/383612889175460/lessons/4131369051/concepts/36278486920923#">text editor.</a>
+          Open your text editor and select File > Open…
+          Find the css-demo folder on your computer and select it by single-clicking.
+          The folder name should be highlighted.
+          Press the Open button. You should see a gray bar on the left.
+          Double click on app.html and style.css in the gray bar on the left (this might look a little different depending on your editor).
+        </p>
+      </div>
+    </div>
+    <div class="concept">
+      <div class="concept-title">
+        <h3>Adding Style</h3>
+      </div>
+      <div class="concept-description">
+        <p>
+          Use Google Chrome (a web browser) to open app.html.
+          If you don't have Google Chrome, please download it <a href = "https://www.google.com/chrome/index.html#">here.</a>
+          Navigate to Tools and then navigate to developer tools in Google Chrome.
+          The structure in developertools is same as in the text editor(Atom) app.html file.
+          But the style description is not there.
+          The browser uses its default style for all of the elements.
+          If you open the app.html in browser it's not very pretty.
+          So we have to add some style.
+          So go to Atom text editor and open the app.html file and add the following:
+        </p>
+        <p>
+          First we have to add the below declaration i.e an instruction.
+          And also gives information regarding the type of document and the version of HTML.
+          The above must be the first line of code in all of your HTML documents.
+          This doesn't actually add any HTML structure or content.<br>
+          &lt;!DOCTYPE HTML&gt;<br>
+          Then we have to add the following tag because everything here is html.
+          &lt;html&gt;<br>
+          After the html tag we need to add a head tag. This is where you will add link to the style file
+          &lt;head&gt;<br>
+          To add a link to style file we strat typing link and then hit tab.
+          Here sublime text has automatically filled in all of the information we need.
+          Except for the name of the file that contains our style information.
+          which in this case is called as style.CSS<br>
+          &lt;link rel="stylesheet" type="text/css" href="style.css"&gt;<br>
+
+          &lt;/head&gt;<br>
+          After the closure of the head tag we then add the body tag<br>
+          &lt;body&gt;<br>
+          Between the body tags we should have the html structure we wrote before.<br>
+
+          &lt;/body&gt;<br>
+          &lt;div class="title"&gt;My App&lt;/div&gt;<br>
+        	&lt;div class="app"&gt;<br>
+          &lt;div class="screenshot"&gt;image&lt;/div&gt;<br>
+        	&lt;div class="description"&gt;In ac ipsum quis turpis adipiscing commodo.<br>
+          <em>Mauris fermentum quam</em> in risus eleifend fringilla.Aliquam placerat, ipsum sit amet cursus rhoncus, augue mi tincidunt erat, et consequat velit massa a velit.
+          Cras eleifend lectus nec diam ornare, eu placerat mi ultricies. Etiam tempor iaculis feugiat.Ut tincidunt tempus libero non convallis. Morbi consequat eros eget elit porta porta.
+          Curabitur placerat eros dui, vitae lobortis sapien laoreet ac.Maecenas a lacus diam. Morbi ante lectus, ornare sed suscipit at, tempus elementum purus.
+          Suspendisse sodales hendrerit pharetra.Integer odio risus, convallis eu egestas ad, venatis nec leo.ac ipsum quis turpis adipiscing commodo.
+          <em>Mauris fermentum quam</em> in risus eleifend fringilla. <a href="#">Aliquam placerat</a>, ipsum sit amet cursus rhoncus, augue mi tincidunt erat, et consequat velit massa a velit.
+          Cras eleifend lectus nec diam ornare, eu placerat mi ultricies. Etiam tempor iaculis feugiat.Ut tincidunt tempus libero non convallis. Morbi consequat eros eget elit porta porta.
+          Curabitur placerat eros dui, vitae lobortis sapien laoreet ac. Maecenas a lacus diam. Morbi ante lectus, ornare sed suscipit at, tempus elementum purus.
+          Suspendisse sodales hendrerit pharetra. Integer odio risus, convallis eu egestas ac, venenatis nec leo.<br>
+          &lt;/div&gt;<br>
+          &lt;/div&gt;<br>
+          As above we have a starting , we need an end tag too<br>
+          &lt;html&gt;<br>
+          And for code readability we indented the html structure.
+          Lets replace the place holder description with some text provided in instructor notes at the following link.
+          <a href = "https://classroom.udacity.com/nanodegrees/nd000/parts/0001345402/modules/383612889175460/lessons/4131369051/concepts/36144286820923">here.</a>
+
+          Once the text is added save the file and then refresh your browser page
+          You can notice that chrome browswer is updated with the text you have included.
+          Since you have linked your style sheet to your html file,
+          you can go to the style.css file and add some style to the page.
+          Add the following style i.e color red and save the file and refresh
+        </p>
+        <p>
+          Here is the CSS code<br>
+          .description {<br>
+            color:red;<br>
+          }<br>
+          Then we can notice that the text in the description box turns red.
+        </p>
+      </div>
+    </div>
+    <div class="concept">
+      <div class="concept-title">
+        <h3>Understanding CSS</h3>
+      </div>
+      <div class="concept">
+        <div class="concept-title">
+          <h4>What is CSS?</h4>
+        </div>
+        <div class="concept-description">
+          <p>CSS means cascading style sheet</p>
+        </div>
+      </div>
+      <div class="concept">
+        <div class="concept-title">
+          <h4>What is Style?</h4>
+        </div>
+        <div class="concept-description">
+          <p>Style means look or the way the website appears to the user</p>
+        </div>
+      </div>
+      <div class="concept">
+        <div class="concept-title">
+          <h5>>What do sheets mean?</h5>
+        </div>
+        <div class="concept-description">
+          <p>
+            You can have several CSS files or sheets that will be referenced in HTML.
+            And all of them will be used to find out the final and visible style to your page.
+            With CSS the most specific rule is applied to every element.
+          </p>
+        </div>
+      </div>
+      <div class="concept">
+        <div class="concept-title">
+          <h5>What do cascading and sheets mean?</h5>
+        </div>
+        <div class="concept-description">
+          <p>
+            Cascading means you keep going down and down into the rules until you find the one that best describes the elements and then that rule gets applied.
+          </p>
+          <p>
+            In CSS you first write what's called a selector.
+            And this defines what elements of the page a particular style applies to.
+            You can select an HTML tag and that rule will apply to all tags on the page.
+            And if for example you want to apply style to all paragraphs on a page.
+            You can do so by writing the following on style.css file.
+          </p>
+          <p>
+            CSS code:<br>
+            P{<br>
+              <br>
+            }<br>
+            or
+          </p>
+          <p>
+            Another way to do so is select the elements by class.
+            And this is what we did in our previous example.
+            So if we want to write a style that applies to class description,
+            We do so by typing the dot and description and inside the brackets,
+            You write style in the form of attribute colon value.
+            So for example we can say attribute color is value red
+          </p>
+          <p>
+            .description{<br>
+              color:red;<br>
+            }<br>
+          </p>
+          <p>
+            You can also combine selectors.
+            You can select all links that are inside an element with the class article.
+            There are links to the instructor notes with more information on this.
+            To learn more about colors and how to define them.
+            To do that CSS has lot of functionality and you can explore all that using the following link.
+            https://developer.mozilla.org/en-US/docs/Web/CSS/Reference
+            If you refer the above documentation you will get answers fot the following.
+            What are the possible values for font-style property?
+            Italic, normal,oblique
+            What property would you use to make the text bold?
+            font-weight
+          </p>
+        </div>
+      </div>
+      <div class="concept">
+        <div class="concept-title">
+          <h6>Search and Replace</h6>
+        </div>
+        <div class="concept-description">
+          <p>
+            You can also think about CSS as a search and replace tool.
+            You identify a class or a tag of the element you want to find (or match, in CSS terminology), and then what you want to do with it, or what property values to replace with different ones.
+          </p>
+        </div>
+      </div>
+      <div class="concept">
+        <div class="concept-title">
+          <h6>Order Matters</h6>
+        </div>
+        <div class="concept-description">
+          <p>
+            It also matters where you define the rules and in what order they are applied.
+            Styles can be defined in different places and are applied in the following order, with definitions further down the list overwriting previous definitions:
+          </p>
+          <ul>
+            <li>the default style of a browser (different browsers have slightly different styles)</li>
+            <li>stylesheet in a separate file (this is what you will be mostly using)</li>
+            <li>stylesheet inside HTML (this can be done for small projects but is not ideal)</li>
+            <li>inline style in an element (this can also be done but should be avoided)</li>
+          </ul>
+        </div>
+      </div>
+      <div class="concept">
+        <div class="concept-title">
+          <h6>Specifics Matter</h6>
+        </div>
+        <div class="concept-description">
+          <p>
+            "Cascading" means that rules are applied not only to the elements they directly match, but also to all of those elements' child elements. However, if a child element has multiple, overlapping rules defined for it, the more specific rule takes effect.
+          </p>
+        </div>
+      </div>
+    </div>
+    <div class="concept">
+      <div class="concept-title">
+        <h3>Styling Up</h3>
+      </div>
+      <div class="concept-description">
+        <p>
+          In CSS you first write what's called a selector.
+          And this defines what elements of a page a particular style will apply to.
+          You can select an HTML tag and that rule will apply to all tags on that page.
+          And if for example you want to apply style to all paragraphs on a page you can do so by writing the following:
+          Another way to do so is select the element by class, This is what we did in previous example.
+          So if we want to write a style that applies to class description we do so by typing .description and inside the brackets we arite the style in the form of attribute colon value.
+        </p>
+        <p>
+          So for example we can attribute color value is red.
+          .description{
+            color: red;
+            }
+        </p>
+      </div>
+    </div>
+    <div class="concept">
+      <div class="concept-title">
+        <h3>Combining Selectors</h3>
+      </div>
+      <div class="concept-description">
+        <p>
+          You can also combine selectors.
+          So for example you can select all links that are inside an element with class article.
+          There are links to the instructor notes for more information on this..
+          Earlier we have decided that red is not the best color. So what if we want to learn more about colors..
+          i.e to choose blue or black or any other color.. or more specific..
+          There should be some way to do it..
+          CSS has lot of functionality and you can refer CSS documentaion i.e MDN CSS Reference <a href = "https://developer.mozilla.org/en-US/docs/Web/CSS/Reference#">here</a>. No need to memorize attributes and values.
+          If you search the above page about the font-style property: italic and normal are the possible values for the property
+          The property to use to make the text blod is font-weight property
+        </p>
+        <p>
+          Important websites:
+          To know How CSS Selectors Work <a href = "https://css-tricks.com/how-css-selectors-work/#">click here.</a>
+          MDN CSS Reference <a href = "https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/#">click here.</a>
+          Browsers use default stylesheets to determine how to display HTML elements.
+          You can view the default style rules for h1 and other elements for the following browsers:
+          WebKit (Chrome and Safari) <a href = "http://trac.webkit.org/browser/trunk/Source/WebCore/css/html.css/#">click here.</a>
+          Firefox <a href = "https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/#">click here.</a>
+          Internet Explorer <a href = "http://www.iecss.com/#">click here.</a>
+        </p>
+        <p>
+          As rules differ sometimes between browsers, there are efforts to promote consistency in styles across browsers.
+          One popular solution to this issue is using what is referred to as a CSS reset such as <a href = "http://necolas.github.io/normalize.css/#">normalize.css.</a>
+          You can find the documentation page on fonts <a href = "https://developer.mozilla.org/en-US/docs/Web/CSS/font/#">here.</a>
+        </p>
+      </div>
+    </div>
+    <div class="concept">
+      <div class="concept-title">
+        <h3>Using Semantic tags:</h3>
+      </div>
+      <div class="concept-description">
+        <p>
+          Changing the visual properties of an element only changes how the element is displayed.
+          Not what kind of element it is.
+          Choose the right type of element for certain parts of a page, depending on what purpose of that element is..
+          For example in (open app.html page) the title at the top of the page giving the user an understanding of what is on page?
+          So you should be using the tag that provides such information..
+          Think of it in terms of Microsoft word , Google Doc or open Office document..
+          When you are typing in document you might select different headings in order to tell user what part of document they are reading..
+          In HTML you can do the exact same thing.
+          Except we call these tags h1, h2, h3 etc.
+          Search engines also use index the structure and contents of the webpage.
+          Therefore you can change the div tag to more appropriate h1 tag for our title.
+          Refresh your browser and see what happened..?
+          What happens to the text "My App"
+          Open app.html in text editor for ex: Atom
+          And change thetitle div to h1
+          Savwe it and open app.html in google chrome and navigate to developer tools
+          place your curson on h1 title
+          You can notice that The test My App changed in size and the box around my text changed.
+        </p>
+      </div>
+    </div>
+    <div class="concept">
+      <div class="concept-title">
+        <h3>The Box Revisited:</h3>
+      </div>
+      <div class="concept-description">
+        <p>
+          Everything on the webpage is a box.Good understanding of box model is important.
+          There is the concept of margins, borders, padding, content all of these makes the
+          box on the web page. Open the following webpage in Developer tools.<a href = "https://classroom.udacity.com/nanodegrees/nd000/parts/0001345402/modules/383612889175460/lessons/4131369051/concepts/27713785690923/#">click here.</a>
+          If we explore this box in developer tools, At the very center of the image we have Content.
+          Content is the image or text that appears on the website
+          In the next layer we have padding. This is the green color.
+          The padding clears an area around the content. And it's effected by the back-ground color of the box.
+          So think of it as the space inside of the box that protects the content directly
+          Border then goes around the padding and the content.
+          And the border is inherited from the color property of the box.
+          And lastly the outer layer is the margin and this clears an area around the border.
+          The margin doesn't have a background color and its completely transparent.
+          And think of this as the space between boxes.
+          Try to play along with the widths of each of these and see how it affects the box both here and in the computed tab.
+          For example if you change the margin from 20 pixels to 30 pixels , we will notice that we have little extra space at the top.
+          Navigate to the computed tab, we can notice that 30 pixels at top and 30 pixels at bottom.
+          By default the size of the actual element is equal to the sum of the border, padding and content width.
+          So if we wanted to compute the width of the element shown on the page. We would have left border of 10.
+          Plus a left padding of 30, plus a content width of 200.
+          Plus right padding of 30 and right border of 10.
+          So our actual element width is 280 pixels.
+          Not just the 200 pixel width of the content
+          How much space the box will take on the screen without recalculating it each and every time you change one of these values?
+          But luckily an easier model has been developed. we should plan to use that
+          This is CSS style, box-sizing, border-box, this makes the calculation of element size
+          include both the border and padding.
+          So that it's easier to make layouts.<br>
+          *{
+            box-sizing: border-box;
+          }
+          <br>
+          You can just set the width of the overall box and no matter how you tweak...
+           The padding in border sizes, the size of the box will always stay the same.
+          Remember though that margin is not included in the size.
+          However there is one drawback with this model.
+          It's bean developed fairly recently so if you want to be sure that older browsers are also able to dispaly it,
+          You need to add whats called browser specific prefixes.
+          These prefixes are webkit, moz and ms
+          You can just add them infront of style definition and they are defined like so.<br>
+          *{
+            <br>
+            -webkit-box-sizing: border-box;<br>
+
+            -moz-box-sizing: border-box;<br>
+            -ms-box-sizing: border-box;<br>
+            box-sizing: border-box;<br>
+          }
+          <br>
+          We have been setting the size of a box in pixels.But it's also possible to do it as a percentage.
+          Go to the My Fav app page as an example, <a href = "http://assignments.udacity-extras.appspot.com/courses/html-css/samples/style-1.html/#">click here.</a>
+          We can see how changing the content box from set-pixel to percentage affects the screen size.
+          You can also set the size of the box either as pixel or percentage
+          If you set it as percentage the size will change depending on how big the screen is or how encompassing the boxes.
+          If you set the box-size in pixels it will take exactly that size and will not change no matter how big or small the screen is..
+          This can sometimes lead to a bad user experience.
+          For example if we look back at our my favorite app.
+          You'll see that this  paragraph is defined as a set number of pixels.
+          If I resize the screen you'll see that it stays the same and disapperas as I make it smaller.
+          However if I instead set this to be a percentage,
+          say we want it to take up 50% of the screen
+          Notice how the size changes as I make the screen  smaller..
+          You can also set a max width for the box in that case it will resize
+          and becomes smaller when necessary but not larger than the set max width
+          And now it's time for you to put this info into your own style sheet file.
+          Add the border box definition and then add the max width attributes to the divs encompassing the image and description of the app
+          If you look back at your design mock, We got notes from the designer that the image should be 460 pixels wide.
+          And the description should be 705 pixel wide
+          So when you add the border box definition and max width attributes, The box sizes will be different. But the layout is still same.
+        </p>
+      </div>
+    </div>
+    <div class="concept">
+      <div class="concept-title">
+        <h3>Positioning Boxes:</h3>
+      </div>
+      <div class="concept-description">
+        <p>
+          In the previous excercise even when you define the width of the divs they still displayed one under another.
+          As if they were taking the whole width of the page.
+          This is n't what you want. So we need to do positioning boxes. There's a lot of power in css to position elements.
+          However it is probably one of the most complicated concepts about css.
+          Now we'll just cover one powerful technique and that's how to use the flex box layout.Flex box means flexible box.
+          And it provides an efficient  way to layout a line and distribute space among items in a containter or div.
+          remember in our mocklayout that we have image next to our description.
+          If you want several elements next to each other you can change the display attribute of the parent container to value flex
+          Looking here at our app we have our parent div class app and here we can add display flex
+          That made child allignment try and allign next to each other.
+          For it to work you also have to give the items a size that is smaller than the default 100%.
+          But you already did that in previous exercise. Be sure to check out all the cool features of flex box in the instructor notes.
+          Then it's time for to use this features and finally make the box on your pages work properly.
+        </p>
+        <p>
+          Box sizing and Positioning Summary:<br>
+          You can find more resources in http://learn-2-code.appspot.com/additional_resources/#topic-1<br>
+
+          U can find more resources in the example webpage I've made.<br>
+          Box Sizing:<br>
+          There are four main points that Jessica addressed about box sizing.
+          HTML elements are boxes and each box has 4 components.
+          Because there are so many components to each box, it can often be hard to get the size of a box just right.
+          There are two techniques you can use to help deal with sizing issues.
+          Set sizes in terms of percentages rather than pixels.
+          Set the box-sizing attribute to border-box for every element.
+          Image here
+          Different browsers work slightly differently. Sometimes this causes different browsers to display the same code differently.<br>
+          Box Positioning:<br>
+          Divs are block elements (as opposed to inline), so by default they take up the entire width of a page.
+          Adding the rule display: flex; to the appropriate CSS will override this behavior and let divs appear next to each other.
+        </p>
+      </div>
+    </div>
+    <div class="concept">
+      <div class="concept-title">
+        <h4>Adding Image:</h4>
+      </div>
+      <div class="concept-description">
+        <p>
+          The page is starting to look more like the design. But we are still missing the image.
+          To use the image you have to store somewhere where the page can access it.
+          Make a folder called images inside your project folder and put the image there.
+          Make sure the image doesnot contain any spaces or accented characters or else it will make linking to it more difficult.
+          You can add the image to the page with the tag img and providing the source of the image like so.
+          You should also provide alt attribute, which displays alternate information to the screen in case browser can't display the image.
+          Once you have added the image the page look a lot more like the actual design mock.
+          But header background, text color are different, margins and padding for boxes are different, font-size and style are diffferent.
+        </p>
+        <p>
+          If you look back bat the very first moment that you wrote code in this lesson.
+          You will notice that you have been following a very simple pattern of code, test and refine.
+          You'll write some code, test and see how it looks against the design mockup that you recieved.
+          And then make any refinements or modification to the code, so that it looks closer to the design.
+          And you'll repeat this process of testing and modifying until it looks like the design you were given.
+          But how do you know where to start testing. And how do you also know what to refine so that it looks closer to the design.
+          First you need to get the structure of the page right..?
+          You should be able to that visually by from the design by visually boxifying it..?
+          Then move onto work on tags. If something needs to be a heading make it so..?
+          Then think about the size of the boxes , How big they should be..?
+          And then how to position them where you want on the screen..?
+          Once the general layout is complete the time has come for smaller details.
+          And these you can polish until the page looks exactly like the design image you were given.
+          So to summarize make sure to divide and conquer..Look for places that are distinct..?
+          Everything on the web is a box, So look for natural boxes. Then look for repeated styles and semantic elements.
+          H2 should be the second biggest headings on the pag=e and things like that.
+          Think about how you can relate this to HTML elements then write your html then apply your styles
+          Go from your biggest site wide elemements to your smallest like widgets.
+          Then fix the small things
+          Look at your site in other browsers.
+          Resize your window and just keep repeating steps 3 and 4 until you are happy and your website looks like design mockup
+        </p>
+      </div>
+    </div>
+    <div class="concept">
+      <div class="concept-title">
+        <h3>More On Dev Tools:</h3>
+      </div>
+      <div class="concept-description">
+        <p>
+          Now developer tools can also be a great help to you during the code test refine routine.
+          You are able to test things on the fly and
+          see how it affects your page without actually changing the css and html files
+          So with the header 1 here I can easily change the font -size to make it bigger or smaller
+          I can change the font-family say to Arial
+          I can also change the background color of things..
+          So for example say I might not have the hexadecimal color from the designer
+          But you can use the slider and choose something that looks pretty close.
+          You can also click over to the sources tab and see the code, in the same place.
+          And then also remember that you can reset any changes by just clicking the refresh button.
+          So go a head and play around with Dev tools and see what you can change and let me know..
+        </p>
+      </div>
+    </div>
+    <div class="concept">
+      <div class="concept-title">
+        <h3>Comparing with The Design:</h3>
+      </div>
+      <div class="concept-description">
+        <p>
+          look at your page and compare with design mock.
+          Make sure you go deeper than a just simple visual check .
+          See if the defining parts are correct..
+          The Layout, Margins, Fonts, Colors etc.
+          For example does the image in the mock up look different than the image on your page
+          You can see that there's actually a space here and we don't have a space here.
+          You can use Dev tools to find the proper value of the margin for the image class
+          Once you have refined it in Dev tools, you can then save it to your CSS file.
+          You can look to to the design mock to find this information..
+          The back ground and color for the title is also incorrect
+          Now often these colors are provided within the design document.
+          And you can see the small boxes on the left hand side and the color in a hex code is defined there.
+          But you can also use different color picker tools to get the same information.
+          As you refine the design answer the following question first,
+          What margin size gets the design closer to the mock.
+          And also what is the back ground color for the header..?
+        </p>
+      </div>
+    </div>
+    <div class="concept">
+      <div class="concept-title">
+        <h3>Verifying HTML And CSS:</h3>
+      </div>
+      <div class="concept-description">
+        <p>
+          It is important that the HTML and CSS you write is correct and complies with standards.
+          If it's incorrect it might display ok in one browser, which correctly guesses your intention.
+          But incorrectly in another which makes a different assumption and there are also icons which you can show on your web page
+          So that others know that your page complies with standards.
+          We have provided linka where you can verify your html and css code in the instructor note section below.
+          Go a head and do this now for your html page and explore the error that it returns
+          The error is some what cryptic so if you cant figure out what it means dont worry
+          On exploring the error you will notice that some thing is missing from the page
+          What element is missing some thing..
+        </p>
+
+      </div>
+    </div>
+  </div>
+</div>
+  <footer class= "tm-footer">
+    &copy;copyright Alivelu 2017
+  </footer>
+  <p>
+    <small> Written by Alivelu Duvvuri</small>
+  </p>
+  <!--Closing body tag-->
+  <!-- Closing HTML tag-->
+  <!--Note:If you closely observe above steps you can understand that the indentation level increases when an idea begins and decreases when an idea is finished-->
+</body>
+</html>

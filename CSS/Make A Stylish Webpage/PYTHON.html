@@ -1,0 +1,93 @@
+<!-- This is an HTML comment. It's just here for PEOPLE to read. The computer ignores it.  -->
+<!DOCTYPE HTML>
+<!--The above declaration is an instruction and also gives information regarding the type of document and the version of HTML. The above must be the first line of code in all of your HTML documents.This doesn't actually add any HTML structure or content.-->
+<html lang="en">
+<!--To begin adding HTML structure and content, we must first add opening and closing <html> tags.Anything between <html> and </html> will be considered HTML code.-->
+<!--Vocabulary in HTML:Angle brackets - The characters < and > are known as angle brackets.HTML element or element is the HTML code that lives inside of angle brackets. Opening tag - the first HTML tag used to start an HTML element. Closing tag - the secondng HTML tag used to end an HTML element. Closing tags have a forward slash (/) inside. Except few HTML elements, most elements consist of an opening and closing tag.-->
+<head>
+  <meta charset="UTF-8">
+  <!--By opening a <head> tag or element, we can give some information about the page. The <head> element will contain information about the page that isn't displayed directly on the actual web page.-->
+  <!--Specify the character encoding for the HTML document:-->
+  <title>Alivelu Duvvuri's Project</title>
+  <!--This is the title of the page. it appears on the top of our browser.The title can be specified directly inside of the <head> element, by using a <title> element.-->
+  <link rel = "stylesheet" href = "style.css" media="all">
+  <!--The above line of code links an external style sheet to this html document-->
+</head>
+<!--Closing head tag-->
+<body>
+  <!-- Opening body tag-->
+  <!--Browser displays content.Before adding content, we have to add a body to the HTML file. Once the file has a body, many different types of content can be added within the body, like text, images, buttons.This has meta data, java script , css included in this section.-->
+  <!--Above lines of code is sometimes referred to as "boilerplate code.Boilerplate code" is used to describe the basic HTML code required to begin creating a web page.-->
+  <div id = "container">
+    <!-- The <h1> tag stands for "heading 1". Heading tags go all the way up to <h6>. Lower numbered headings indicate content that is more important. -->
+    <header>
+      <nav>
+        <div>
+          <img src="html-css-logo.png" alt ="logo" width="100" class="tm-logo">
+          <h1>My Notes on PYTHON</h1>
+
+        </div>
+        <div id="top_nav">
+          <ul id=pagelinks>
+            <!--Means you want your home button in red color-->
+            <li> <a class="black" href= "index.html">Home </a></li>
+            <!--# takes back to the same page again-->
+            <!--<li> <a href= "#">HTML </a></li>-->
+            <!--Give the page name in place of "#" i.e HTML.html-->
+            <li> <a  class="black" href= "HTML.html">HTML </a></li>
+            <li> <a class="black" href= "CSS.html">CSS </a></li>
+            <li> <a class="black" href= "PYTHON.html">Python</a></li>
+            <li> <a class="black" href= "ABOUTUS.html">AboutUs</a></li>
+            <li> <a class="black" href= "CONTACTUS.html">ContactUs</a></li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+    <!--Divider between header and body-->
+    <div class="divider">
+    </div>
+  </div>
+      <!-- <img src="html-css-logo.png" alt ="logo" width="110" class="tm-logo">-->
+      <!--Give a class tm-logo to float right or left-->
+      <!--Add corresponding code in css-->
+      <!-- <h1>My Notes on HTML, CSS & PYTHON</h1> -->
+      <!-- The <h1> tag stands for "heading 1". Heading tags go all the way up to <h6>. Lower numbered headings indicate content that is more important. -->
+      <!-- <nav>
+        <ul>
+          <li> <a href= "#">Home </a></li>-->
+          <!--# takes back to the same page again-->
+
+          <!-- <li> <a href= "#">HTML </a></li>
+          <li> <a href= "#">CSS </a></li>
+          <li> <a href= "#">Python</a></li>
+          <li> <a href= "#">About Us</a></li>
+          <li> <a href= "#">Contact Us</a></li>
+        </ul>
+      </nav>
+    </header> -->
+  <div class="lesson">
+    <h2>Basics of PYTHON</h2>
+    <div class="concept">
+      <div class="concept-title">
+        About PYTHON
+      </div>
+      <div class="concept-description">
+        <p>
+          Under Construction.
+        </p>
+      </div>
+    </div>
+  </div>
+
+  <footer class= "tm-footer">
+    &copy;copyright Alivelu 2017
+  </footer>
+  <p>
+    <small> Written by Alivelu Duvvuri</small>
+  </p>
+  <!--Closing body tag-->
+  <!-- Closing HTML tag-->
+  <!--Note:If you closely observe above steps you can understand that the indentation level increases when an idea begins and decreases when an idea is finished-->
+
+</body>
+</html>

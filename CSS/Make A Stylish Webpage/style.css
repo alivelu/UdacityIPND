@@ -1,0 +1,628 @@
+/* This is a CSS comment*/
+/*Create CSS selectors as follows*/
+/*These are from Google Fonts import section*/
+@import url('https://fonts.googleapis.com/css?family=Oswald:400,700');
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,700');
+/*Reset all elements on your website using * symbol*/
+*{
+  margin:0;
+  padding:0;
+  /* A web page comes with default margins and spacings, The above code removes all default values*/
+  /* margin, padding 0 means: sometimes the browser will apply it's default margin/padding to elements,
+   and in a case where you do not want there to be any margin or padding space around an element
+   you have to define that there is no margin or padding. */
+  font-family: sans-serif;
+}
+
+body{
+  /*Add menu and back-ground color That is about body section*/
+  /*background is a short cut . background image is a property.
+  background-image: url('web.jpg');
+  /*background-size: Xpx Ypx; you can give values to X and Y and can adjust the image in a specific size */
+  /*background-size: 250px 160px;*/
+  /*background-size: cover means it makes the background image as big as the browser window*/
+  /*By default back ground image repeats again and again..*/
+  /*background-size: cover;*/
+  /*Cover makes the image fit actual width of the screen.*/
+  /*background-repeat: no-repeat is used for not repating the same image again and again*/
+  /*background-repeat: no-repeat;*/
+   /*background-repeat: repeat-x; is used for repating horizontally*/
+  /*background-repeat: repeat-x;*/
+  /*background-repeat: repeat-y;is used for repating vertically*/
+  /*background-repeat: repeat-y;*/
+  /* shorthand property of background
+  background: bg-color bg-image position/bg-size bg-repeat bg-origin bg-clip bg-attachment initial|inherit */
+  /*background: black url('web.jpg');*/
+  /*for fixed background image use fixed*/
+  /*background: black url('web.jpg')  center/cover  no-repeat fixed;*/
+  /*for scrolling use scroll then the image goes with content*/
+  /*background: black url('web.jpg')  center/cover  no-repeat scroll;*/
+  /* shorthand property of background
+  background: bg-color bg-image position/bg-size bg-repeat bg-origin bg-clip bg-attachment initial|inherit */
+  /*for fixed background image use fixed*/
+  /*background: black url('web.jpg')  center/cover  no-repeat fixed;*/
+  /*To insert background image*/
+  background: white url('whitebackground.jpg') center/cover no-repeat fixed;
+  margin: 0;
+
+}
+/*Background image can be inserted in another way too:i.e using a class in html*/
+/*
+.bkimage{
+  background-image: url('whitebackground.jpg');
+  width:100%;
+  height:100%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  margin: 0;
+  padding: 0;
+}
+*/
+header{
+  height: 115px;
+  position:relative;
+  /*positions top left hand corner*/
+  /*border: 1px solid black;*/
+  background: url('banner.jpg');
+  /*padding: 15px 15px 0px 15px;*/
+  color:black;
+  text-align: center;
+  /*
+  text-align: center;
+  background: #777;
+  color:white;
+  padding: 15px 15px 0px 15px;
+  */
+}
+
+/*
+header h1{
+  text-align: center;
+  background: #777;
+  margin: 0;
+  dispaly:inline;
+  border-radius: 10px;
+}
+*/
+/* Here h1 is inside header*/
+header nav div h1{
+  display:inline;
+  font-family: 'Oswald', sans-serif;
+  font-weight: 200;
+  font-size: 40px;
+}
+
+
+/*.tm-container{
+  /*margin:0 auto;*/
+  /*margin:0;*/
+  /*
+.tm-header{
+  text-align: center;
+  background: #777;
+  color:white;
+  padding: 15px 15px 0px 15px;
+}
+/*Add Pseudo element after*/
+/*
+.tm-header::after{
+  content:"";
+  clear:both;
+  display:block;
+  visibility: none;
+}
+*/
+/*For log0 : corresponds to the header section in html*//*
+.tm-logo{
+  width:160px;
+  height:80px;
+  float: left;
+}*/
+
+.tm-logo{
+  width:200px;
+  height:115px;
+  float: left;
+}
+/*Float and clear*/
+/*Here we are discussing Float*/
+/*
+p{
+  border: 3px solid red;
+}
+*/
+/*Then select the image by class float and then float to left
+paragraph appears on the right hand size of the image and border will be missing . because it goes behind the image.*/
+/*
+.float{
+  float:left;
+  margin-bottom: 20px;
+  margin-right:20px;
+}
+*/
+/* Try right float*/
+/*
+.float{
+  float:left;
+  margin-bottom: 20px;
+  margin-right:20px;
+}
+*/
+/* Clear: Which way this image is floated we are clearung both sides*/
+/*
+.clear{
+  clear:both;
+}
+*/
+
+/*For banner corresponds to the header section in html*/
+#container{
+  /*margin:0 auto;*/
+  /*margin: auto;*/
+  text-align: left;
+  width: 1000px;
+  margin: auto;
+  border-left: 2px solid #cccccc;
+  border-right: 2px solid #cccccc;
+  min-height: 80px;
+}
+
+nav div ul{
+  margin:0;
+  display: inline;
+  padding: 0;
+}
+
+nav div ul li{
+  background-color: #666;
+  color:white;
+  display: inline-block;
+  list-style-type: none;
+  margin-left: 5px;
+  margin-right: 5px;
+  padding:10px 30px;
+  border-radius: 10px;
+}
+
+nav div ul li a{
+  text-decoration: none;
+  color: white;
+}
+/*To style list as circle*/
+/*
+ul{
+  list-style-type: circle;
+}
+
+ol{
+  list-style-type: square;
+}
+*/
+/*Default style is disc*/
+/*Default style is disc*/
+/*
+ul{
+
+  list-style-type: disc;
+}
+*/
+/*
+ul{
+
+  list-style-type: decimal;
+}
+*/
+/*Decimal style lists are numbered*/
+/*Make an unordered list an ordered list*/
+/*
+ul{
+
+
+  list-style-type: lower-roman;
+}
+*/
+/*List style image*/
+/*
+ul{
+  list-style-image:url('emoji.jpg');
+  padding-left: 600px;
+}
+*/
+/*To remove listing style completely*/
+/*
+ul{
+  list-style-type: none;
+  padding-left: 0px;
+}
+*/
+/*It's related to navigation part*/
+#top_nav{
+  color:white;
+  position: absolute;
+  /*Absolute looks for first parent element */
+}
+
+#pagelinks{
+  font-family: 'Montserrat', sans-serif;
+  float:right;
+  margin-left: 200px;
+  margin-top: 15px;
+}
+
+h2,h3,h4,h5,h6{
+  display: inline;
+  background: #777;
+  /*display: inline;*/
+  border-radius: 10px;
+
+}
+
+.divider{
+  background-color: #777;
+  height:5px;
+}
+/*When hover over the pagelink turn into blue*/
+.black:hover{
+  background-color: blue;
+  /*padding: 30px 10px 16px 10px;*/
+}
+.black:active{
+  color:orange;
+}
+
+/*After visiting a link changes to red*/
+.black:visited{
+  color:red;
+}
+
+/*":" Colon means using a Pseudo class*/
+/*
+p:hover{
+  color:red;
+  border: 2px solid green;
+}
+*/
+/* For links in html to modify add the following css code as below*/
+/*
+a{
+  color:blue;
+  text-decoration: none
+}
+*/
+/* When you hover over it turns to green*/
+/*
+a:hover{
+  color:green;
+}
+*/
+/*After Clicking turns to orange*/
+/*
+a:active{
+  color:orange;
+}
+*/
+/*After visiting a link changes to red*/
+/*
+a:visited{
+  color:red;
+}
+*/
+/*nth-child(2) means it selects our 2nd paragraph. Every 2nd paragraph it turns grey.*/
+/*
+p:nth-child(2n){
+  color:grey;
+}
+*/
+
+/*Pseudo element*/
+/*Makes the first element of a parapgraph i.e first letter double the size*/
+/*
+p::first-letter{
+  font-size: 200%;
+  color: yellow;
+}
+*/
+/*Makes the first line  of a parapgraph double the size*/
+/*
+p::first-line{
+  font-size: 200%;
+  color: purple;
+}
+*/
+
+/* Before element allows us to add some text before our paragraph.
+Use the Paragraph selector and before pseudo element*/
+/*Adds the content "something" before a paragraph*/
+/*
+p::before{
+  content:"something";
+}
+*/
+/* After element allows us to add some text after our paragraph.
+Use the Paragraph selector and after pseudo element and write a code as below*/
+/*Adds the content "nothing" after a paragraph*/
+/*You can add symbols and icons also in content section*/
+/*
+p::after{
+  content:"nothing";
+}
+*/
+div{
+  /*Div is a selector*/
+  margin: auto;
+  margin-bottom: 5px;
+  margin-top: 10px;
+
+}
+
+span{
+  /*border: 1px solid green;*/
+  /*As Span displays as a block element using display property you can display it as block element*/
+  /*Span elements i.e inline elements won't take width and height properies. So adding display property block you can give custom width and height.*/
+  /*display: block;
+  width: 1400px;
+  height: 100px;*/
+  /* For the text in span give color property*/
+  /*color:green;*/
+  /* All the text with span tags change to green color*/
+  /* As we want to change the colors for individual span tags "classes" will be useful.Class= red or class = green */
+  /*Let's see an example.*/
+  color:#500;
+}
+
+div pre{
+
+  background:#888;
+  border-radius: 10px;
+  margin-bottom: 5px;
+  margin-top: 20px;
+}
+
+/*paragraph inside of div.It is a child selector*/
+
+div p{
+  background:#888;
+  border-radius: 10px;
+  margin-bottom: 5px;
+  margin-top: 20px;
+}
+
+p{
+ background:#888;
+ border-radius: 10px;
+ margin-bottom: 5px;
+ margin-top: 20px;
+}
+
+pre{
+ background:#888;
+ border-radius: 10px;
+ margin-bottom: 5px;
+ margin-top: 20px;
+}
+/*
+div{
+*/
+  /*Div is a selector*/
+  /*
+  margin: auto;
+}
+span{
+  color:#500;
+}
+*/
+/*
+span{
+  border: 1px solid green;
+  */
+  /*As Span displays as a block element using display property you can display it as block element*/
+  /*
+  display: block;
+  */
+  /*Span elements i.e inline elements won't take width and height properies. So adding display property block you can give custom width and height.*/
+  /*
+  width: 1400px;
+  height: 100px;
+  }
+  */
+/*When using claases in html we have to write the css code like this*/
+/*
+.green{
+  color:green;
+}
+.red{
+  color:red;
+}
+.blue{
+  color:blue;
+}
+*/
+/*When using ids in css we have to write the css code like this which starts with #*/
+/*
+#green{
+  color:green;
+  }
+#red{
+  color:red;
+  }
+#blue{
+  color:blue;
+  }
+  */
+
+/*Paragraph outsideof div and is a parent selector*/
+/*
+pre{
+
+  background:#888;
+  border-radius: 10px;
+  margin:auto;
+  width: auto;
+  margin-bottom: 1px;
+}
+*/
+
+  /*paragraph outside of div.It is a Parent selector*/
+/*
+p{
+
+  background:#888;
+  border-radius: 10px;
+  margin:auto;
+  width: auto;
+  margin-bottom: 1px;
+}
+
+*/
+/*
+div p{
+  /*Inside of the div there is a paragraph that paragraph we want to turn red.*/
+  /*
+  color:red;
+  }
+.red-text p{
+  color:red;
+  }
+.blue-text p{
+  color:blue;
+  }
+  */
+/*only for divs with blue-text turn the color into blue*/
+  /*
+div.blue-text p{
+  color:blue;
+}
+*/
+
+/*paragraph inside of div.It is a child selector*/
+
+
+ul{
+  list-style-type:disc;
+  margin-left: 20px;
+
+}
+
+ol{
+  list-style-type:decimal;
+  margin-left: 20px;
+}
+
+div ul{
+  list-style-type:disc;
+  margin-left: 20px;
+}
+div ol{
+  list-style-type:decimal;
+  margin-left: 20px;
+}
+
+div p ul{
+  list-style-type:disc;
+  margin-left: 20px;
+}
+div p ol{
+  list-style-type:decimal;
+  margin-left: 20px;
+}
+
+/*When using claases in html we have to write the css code like this*/
+/*
+  .green{
+    color:green;
+    }
+  .red{
+    color:red;
+    }
+  .blue{
+    color:blue;
+    }
+  */
+
+.lesson{
+  margin: auto;
+  width:auto;
+  padding:5px;
+  margin-bottom: 5px;
+  margin-top: 5px;
+}
+.concept{
+  margin: auto;
+  width:auto;
+  padding:5px;
+  margin-bottom: 5px;
+  margin-top: 5px;
+}
+.concept-title{
+  background: #777;
+  color:white;
+  font:bold 1em helvetica;
+  border:1px solid black;
+  padding:5px;
+  margin-bottom: 5px;
+  margin-top: 5px;
+  text-align: left;
+
+  /*padding: 5px 15px 0px 15px;*/
+  border-radius: 10px;
+  float:left;
+}
+.concept-description{
+  margin: auto;
+  width:auto;
+  margin-bottom: 5px;
+  margin-top: 5px;
+}
+
+/*Rounded Corners*/
+/*
+.rounded-corners{
+  border-radius: 20px;
+}
+*/
+/*Turn rectangular image into oval*/
+/*
+.circle-img{
+  border-radius: 50%;
+}
+*/
+/*You can apply rectangles, squares to divs etc also*/
+/*If any text is outside of box add padding*/
+/*
+.block{
+  background-color: blue;
+  height: 400px;
+  width: 400px;
+  padding: 20px;
+  border: 3px solid red;
+
+}
+*/
+
+/*Gradients*/
+/*
+.grad{
+  height: 300px;
+  width: 100%;
+  background: red;
+  */
+
+  /*background: linear-gradient(direction, colors, colors, colors);*/
+  /*
+  background: linear-gradient(to right, red, yellow, blue);
+  background: linear-gradient(to left, red, yellow, blue);
+  background: linear-gradient(to top, red, yellow, blue);
+  background: linear-gradient(to bottom, rgb(30,30,30), #efefef);
+  background: radial-gradient( red, yellow, blue);
+
+}
+*/
+/*Semantic tags*/
+/*Div tags are not semantic*/
+/*Inside header tag nav section*, footer tag, section tag, article tags etc.*/
+
+.tm-footer{
+  clear:both;
+  /*Clearing left and ight floats*/
+}

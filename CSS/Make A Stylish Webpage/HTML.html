@@ -1,0 +1,423 @@
+<!-- This is an HTML comment. It's just here for PEOPLE to read. The computer ignores it.  -->
+<!DOCTYPE HTML>
+<!--The above declaration is an instruction and also gives information regarding the type of document and the version of HTML. The above must be the first line of code in all of your HTML documents.This doesn't actually add any HTML structure or content.-->
+<html lang="en">
+<!--To begin adding HTML structure and content, we must first add opening and closing <html> tags.Anything between <html> and </html> will be considered HTML code.-->
+<!--Vocabulary in HTML:Angle brackets - The characters < and > are known as angle brackets.HTML element or element is the HTML code that lives inside of angle brackets. Opening tag - the first HTML tag used to start an HTML element. Closing tag - the secondng HTML tag used to end an HTML element. Closing tags have a forward slash (/) inside. Except few HTML elements, most elements consist of an opening and closing tag.-->
+<head>
+    <meta charset="UTF-8">
+  <!--By opening a <head> tag or element, we can give some information about the page. The <head> element will contain information about the page that isn't displayed directly on the actual web page.-->
+  <!--Specify the character encoding for the HTML document:-->
+  <title>Alivelu Duvvuri's Project</title>
+  <!--This is the title of the page. it appears on the top of our browser.The title can be specified directly inside of the <head> element, by using a <title> element.-->
+  <link rel = "stylesheet" href = "style.css" media ="all">
+  <!--The above line of code links an external style sheet to this html document-->
+</head>
+<!--Closing head tag-->
+<body>
+  <!-- Opening body tag-->
+  <!--Browser displays content.Before adding content, we have to add a body to the HTML file. Once the file has a body, many different types of content can be added within the body, like text, images, buttons.This has meta data, java script , css included in this section.-->
+  <!--Above lines of code is sometimes referred to as "boilerplate code.Boilerplate code" is used to describe the basic HTML code required to begin creating a web page.-->
+  <div id = "container">
+    <!-- The <h1> tag stands for "heading 1". Heading tags go all the way up to <h6>. Lower numbered headings indicate content that is more important. -->
+    <header>
+      <nav>
+        <div>
+          <img src="html-css-logo.png" alt ="logo" width="100" class="tm-logo">
+          <h1>My Notes on HTML</h1>
+
+        </div>
+        <div id="top_nav">
+          <ul id=pagelinks>
+            <!--Means you want your home button in red color-->
+            <li> <a class="black" href= "index.html">Home </a></li>
+            <!--# takes back to the same page again-->
+            <!--<li> <a href= "#">HTML </a></li>-->
+            <!--Give the page name in place of "#" i.e HTML.html-->
+            <li> <a  class="black" href= "HTML.html">HTML </a></li>
+            <li> <a class="black" href= "CSS.html">CSS </a></li>
+            <li> <a class="black" href= "PYTHON.html">Python</a></li>
+            <li> <a class="black" href= "ABOUTUS.html">AboutUs</a></li>
+            <li> <a class="black" href= "CONTACTUS.html">ContactUs</a></li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+  </div>
+    <!--Divider between header and body-->
+    <div class="divider">
+    </div>
+    <div class="lesson">
+      <h2>Basics of Web and HTML</h2>
+      <div class="concept">
+        <div class="concept-title">
+          <h3>The World Wide Web</h3>
+        </div>
+        <div class="concept-description">
+          <!-- Notice how I removed the <em> tags from the
+        paragraph below. I didn't need to do this, I just
+        wanted to show how you can use a span and some
+        styling to achieve the same effect. -->
+          <p>
+            World wide web is a collection of <span class="italic">HTML</span> documents.These documents are made up of something called <em>HTML</em>, which stands for <em>HyperTextMarkup Language</em>.<em>HTML</em> glues all sorts of files like documents, images, videos etc.The links between these pages are called <em>Hyper Links</em>.Web was invented in 1990.Main type of document on the web is <em>HTML</em>.All of these things/files like Microsoft word, PDF, Plain Text, music, videos, images exist on the web.
+          </p>
+          <!--<p>text</p> Defines a paragraph. The content of the <p> element is in a "box"-->
+          <span class="italic">The major pieces are:</span>
+          <ul>
+            <!--To create a unordered list using HTML, you can use the <ul> element. The <ul> element cannot hold raw text and cannot automatically format raw text with bullet points. Individual list items must be added to the unordered list using the <li> element.Unordered list. Ex: grocery list etc.-->
+            <li>Person to operate the <span class="italic">Computer (you/me)</span>.</li>
+            <li>Computer/Computer running a <span class="italic">Web broswer</span> like Mozilla Firefox/ Internet Explorer/ Chrome etc.</li>
+            <li>The <span class="italic">Internet</span> (Which is the world's largest computer network. The internet uses HTTP to communicate with you, your broswer and servers.</li>
+            <li><span class="italic">Servers</span></li>
+          </ul>
+          <p>
+            <!--Everything as a paragraph use p tag-->
+            <span class="italic">Browser</span> is a program that runs on <span class="italic">computer</span> to display files found on the web.
+            Generally the <span class="italic">browser</span> makes requests via the <span class="italic">internet</span> to <span class="italic">servers</span>.
+            These requests are using a protocol called <span class="italic">http</span> and the <span class="italic">servers</span> respond with the files that the <span class="italic">browser</span> displays.
+            <span class="italic">Servers</span> are just like <span class="italic">computers</span> that host the files that makeup the web.
+            The <span class="italic">protocol</span> HTTP is a very simple protocol that your browser uses to communicate with these <span class="italic">servers</span>.
+          </p>
+        </div>
+      </div>
+      <div class="concept">
+        <div class="concept-title">
+          <h3>About HTML</h3>
+        </div>
+        <div class="concept-description">
+          <p>
+            <br>
+            <span class="bold">HTML</span> means <span class="italic">Hyper Text Markup Language</span>.
+          </p>
+        </div>
+        <div class="concept">
+          <div class="concept-title">
+            <h4>HTML is made up of :</h4>
+          </div>
+          <div class="concept-description">
+            <br>
+            <br>
+            <ol>
+              <!--In ordered lists each list item is numbered. You can create the ordered list with the <ol> element and then add individual list items to the list using <li> elements.-->
+              <li>Text content i.e what you see</li>
+              <li>Mark up i.e what the content look's like and how it's arranged</li>
+              <li>References to other documents ex: images , videos</li>
+              <li>It can be made up of Links to other pages</li>
+            </ol>
+          </div>
+        </div>
+      </div>
+      <div class="concept">
+        <div class="concept-title">
+        <h3> HTML Mark up </h3>
+        </div>
+        <div class="concept-description">
+          <p>HTML markup is made up of things called <b>tags</b>.</p>
+        </div>
+        <div class="concept">
+          <div class="concept-title">
+            <h4>About Tags</h4>
+          </div>
+          <div class="concept-description">
+            <p>
+              <!--Everything in a different line use <br>-->
+              Tag is structured like this:<br>
+              &lt;NAME&gt; Contents  &lt;/NAME&gt;<br>
+              <span class="italic">Opening Tag Name.....The Tag Contents(which can be actualy tags or other tags)...... Closing Tag Name</span><br>
+              <!--<NAME>         Contents          </NAME>-->
+              <!--Opening Tag     Contents         Closing Tag-->
+              The whole thing mentioned above is called as an <b>element</b>.
+            </p>
+          </div>
+          <div class="concept">
+            <div class="concept-title">
+              <h5>Bold Tag</h5>
+            </div>
+            <div class="concept-description">
+
+              <p>
+                <b>b-Tag</b> means Bold tag.Structure is like this:<br>
+                &lt;b&gt; contents  &lt;/b&gt;<br>
+                <span class="italic">opening bold tag ....   Contents..... closing bold tag</span><br>
+                <!--<b> Contents </b>-->
+                Example:<br>
+                HTML is&lt;b&gt;reasonably straightforward&lt;/b&gt;<br>
+                If you open the above code in browser it displays as below:<br>
+                HTML is <b>reasonably straightforward</b><br>
+                Note: The Phrase in between bold tag appears on browser in bold letters.
+              </p>
+            </div>
+          </div>
+          <div class="concept">
+            <div class="concept-title">
+              <h5>Emphasis Tag</h5>
+            </div>
+            <div class="concept-description">
+              <p>
+                <b><em>em-Tag</em></b> means Emphasis tag (Italics).Structure is like this:<br>
+                &lt;em&gt; contents  &lt;/em&gt;<br>
+                <span class="italic">opening em tag ....   Contents..... closing em tag</span><br>
+                <!--<em>     contents     </em>-->
+                Example:HTML is &lt;em&gt;reasonably straightforward&lt;/em&gt;<br>
+                If you open the above code in browser it displays as below:<br>
+                Example:HTML is <span class="italic">reasonably straightforward</span><br>
+                Note: The Phrase in between em tag appears on browser in bold and italicized letters.<br>
+                When you forget the closing <b>em tag</b>, Everything after the opening em tag is italicized.<br>
+                HTML is &lt;em&gt;&lt;b&gt;reasonably straightforward.&lt;/b&gt;HTML is reasonably straightforward.<br>
+                Note:If you open the above code in browser <span class="italic">The Phrase after em tag is completely italicized</span>
+                <!--HTML is <em><b>reasonably straightforward.</b>HTML is reasonably straightforward.<br>-->
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="concept">
+          <div class="concept-title">
+            <h4>HTML Attributes:</h4>
+          </div>
+          <div class="concept-description">
+            <p>
+              Structure is like this:<br>
+              &lt;TAG ATTR = "value"&gt; contents  &lt;/TAG&gt;<br>
+              <!--<TAG ATTR = "value"> contents </TAG>-->
+              <span class="italic">Opening tag---- Attributes always equal to a value-----Closing tag</span><br>
+              Tags can have multiple attributes.
+            </p>
+          </div>
+          <div class="concept">
+            <div class="concept-title">
+              <h5>Anchor Tag</h5>
+            </div>
+            <div class="concept-description">
+              <p>
+                An example of a tag that uses an attribute is  a tag or <b>anchor tag</b>
+                Structure is like this:<br>
+                &lt;a href="value or url"&gt; derp  &lt;/a&gt;<br>
+                <!--<a href="www.reddit.com"> derp </a>-->
+                <span class="italic">opening an attribute name called href=value or url----- derp contents----closing a tag</span>.<br>
+                Example:Make the phrase "my favorite" in the following sentence "This website is my favorite" a link to udacity.com<br>
+                This website is &lt;a href = "udacity.com"&gt; my favorite &lt;/a&gt;<br>
+                If you open the above code in browser it displays as below:<br>
+                This website is <a href = "udacity.com"> my favorite </a>
+              </p>
+              <ul>
+                <li>To know more about the anchor tag<a href="https://classroom.udacity.com/nanodegrees/nd000/parts/0001345401/modules/385165862675460/lessons/3873828673/concepts/485084170923#">Click here</a></li>
+                <li>The link opens in the same window.</li>
+                <li>To open it in a new window the target attribute requires a value of _blank. The target attribute can be added directly to the opening tag of the anchor element, just like the href attribute.</li>
+                <li>To know more about the anchor tag<a href="https://classroom.udacity.com/nanodegrees/nd000/parts/0001345401/modules/385165862675460/lessons/3873828673/concepts/485084170923#" target = "_blank">Click here</a></li>
+              </ul>
+              Note:To access the links Sign in with Username and Password.
+            </div>
+          </div>
+          <div class="concept">
+            <div class="concept-title">
+              <h5>Image Tag:</h5>
+            </div>
+            <div class="concept-description">
+              <p>
+                Structure is like this:<br>
+                &lt;img src = "url"   alt = "text"&gt;<br>
+                <!--<img src = "url" alt = "text">-->
+                <span class="italic">opening img tag   source= url of the image to downlaod  alt stands for alternate</span>.<br>
+                Text means text that could display when the image doesn't load.Image tag is a void tag that means it doesn't have contents.
+                To view HTML structure as an image:<br>
+                &lt;img src= "https://openlab.citytech.cuny.edu/clarkeadv2450/files/2012/08/html-structure.jpg" alt = "Sorry Try Again"&gt;<br>
+                The above HTML code on browser displays an image as below.<br>
+                <img src= "https://openlab.citytech.cuny.edu/clarkeadv2450/files/2012/08/html-structure.jpg" alt = "Sorry Try Again"/>
+              </p>
+            </div>
+          </div>
+          <div class="concept">
+            <div class="concept-title">
+              <h5>Void tag or br tag</h5>
+            </div>
+            <div class="concept-description">
+              <p>
+                <b>br tag</b> is void tag stands for break<br>
+                Syntax:&lt;br&gt;<br>
+                Example:Hello everyone!&lt;br&gt; We're using two lines now!<br>
+                In the browser the above HTML code displays as below.<br>
+                Hello everyone! <br> We're using two lines now!
+              </p>
+            </div>
+          </div>
+          <div class="concept">
+            <div class="concept-title">
+              <h5>Paragraph tag</h5>
+            </div>
+            <div class="concept-description">
+              <p>
+                Another way of using line break is <b>p tag</b>. "p" tag stands for paragraph.<br>
+                &lt;p&gt; contents  &lt;/p&gt;<br>
+                <!--<p> contents</p>-->
+                &lt;p&gt;Hello everyone!&lt;/p&gt;&lt;p&gt;We're using two lines now!&lt;/p&gt;<br>
+                If you open the above code in browser it displays as below:
+                Example:
+              </p>
+              <p>Hello everyone!</p>
+              <p>We're using two lines now!</p>
+              Two different ways of making new line are:br tag and p tag.
+            </div>
+          </div>
+          <div class="concept">
+            <div class="concept-title">
+              <h4>Inline vs Block Elements</h4>
+            </div>
+            <div class="concept-description">
+              <p>
+                HTML elements are either inline or block. Block elements form an "invisible box" around the content inside of them."br" tag is called as inline and it's just ending a line.<br>
+                Inline elements are just text.<br>
+                Ex: b tag, img tag, em tag.<br>
+                "p" tag is block i.e it creates invisible box around text contains height and width.<br>
+                Example: p tag
+              </p>
+            </div>
+          </div>
+          <div class="concept">
+            <div class="concept-title">
+              <h4>Container elements:</h4>
+            </div>
+            <div class="concept-description">
+              <p>
+                Elements that do nothing but contain stuff inside themselves.
+                The purpose of these elements will not be clear yet.
+                But in the next lesson you will see how these elements can be used.
+                i.e to create web pages with complex structures.<br>
+                Ex:Span and Div
+              </p>
+              <ul>
+                <li><b>Span</b> is inline element</li>
+                <!--<span> text </span>-->
+                <li><b>Div</b> is block element</li>
+                <!--<div> text </div>-->
+              </ul>
+              Above are the ways to attach styles to them.
+              <p>
+                Span class equals to foo and Div class equals to bar. These are related to CSS class.<br>
+                &lt;span class = "foo"&gt;<br>
+                &lt;div class = "bar";&gt;
+              </p>
+              <ul>
+                <li> a, span, br, img , strong are <b>inline</b> elements</li>
+                <li>while div, p, and form are <b>block</b> elements.</li>
+              </ul>
+              <p>
+                In HTML particularly, the indentation level increases when an idea begins and decreases when an idea is finished.
+                Let's look at the above lines of code.<br>
+                Note: Please refer to above image.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="lesson">
+      <h2>Stage 1: Make your web page</h2>
+      <div class="concept">
+        <div class="concept-title">
+          <h3>Imp Things</h3>
+        </div>
+        <div class="concept-description">
+          <p>
+            <br>
+            For a web page to look a lot nicer we have to add style using something called CSS.
+            This stage 1 lesson will be an important foundational learning experience for any programming.
+            i.e
+          </p>
+          <ol>
+            <!--In ordered lists each list item is numbered. You can create the ordered list with the <ol> element and then add individual list items to the list using <li> elements.-->
+            <li>What it means to "write code"</li>
+            <li>Why programmers hate unnecessary repetition</li>
+            <li>How the code that programmers write can have structure and how computers read and understand that structure</li>
+            <li>The importance (and pain) of syntax requirements</li>
+            <li>Build comfort with programming tools before learning a more powerful (and potentially challenging) programming language</li>
+            <li>Experience the thrill of writing code to tell a computer what to do and then watching the computer actually do it--></li>
+          </ol>
+          <p>
+            Navigate to Wikipedia web page as it has text, lot of images of different sizes and shapes.
+            If you look at the innerstructure of the Google chrome browser page as it has great developer tools.
+            Or you van use any other web browser and navigate to Developer tools then an additional panel will open.
+            This panel shows the structure of the page.
+            In the panel if you move your cursor over lines or elements then you can notice that parts of the webpage get highlighted.
+            If you click on triangle in the panel it will expand and gives us a tree like structure.
+            A separate panel is also available which is called <em>CSS</em>.
+            By observing wikipedia page and structure in panel you can understand the following:
+          </p>
+          <ol>
+            <li>All elements are rectangle</li>
+            <li>You can read the same text as on the page</li>
+          </ol>
+        </div>
+      </div>
+      <div class="concept">
+        <div class="concept-title">
+          <h3>Tree like structure:</h3>
+        </div>
+        <div class="concept-description">
+          <p>
+            Font size and border width can be known by clicking on the lines or elements in panel.<br>
+            The important things to know are:
+          </p>
+          <ol>
+            <li>HTML and CSS are both "languages"</li>
+            <li>HTML controls the "structure" of a web page</li>
+            <li>CSS controls the "style" of a page (how it looks).</li>
+          </ol>
+          <p>
+            When programmers talk about the <em>"DOM" (Document Object Model)</em> they are talking about the tree-like structure of a page.
+            To learn more about what a "tree-like structure" means, read the first two paragraphs of the wikipedia article on Tree Structures.
+            A tree structure or tree diagram is a way of representing the hierarchical nature of a structure in a graphical form. It is named a "tree structure" because the classic representation resembles a tree, even though the chart is generally upside down compared to an actual tree, with the "root" at the top and the "leaves" at the bottom.
+            A tree structure is conceptual, and appears in several forms. For a discussion of tree structures in specific fields, see Tree (data structure) for computer science: insofar as it relates to graph theory, see tree (graph theory), or also tree (set theory). Other related pages are listed below.
+          </p>
+        </div>
+      </div>
+      <div class="concept">
+        <div class="concept-title">
+          <h3>HTML-CSS-DOM</h3>
+        </div>
+        <div class="concept-description">
+          <p>
+            <b>HTML</b> : HyperText Markup Language<br>
+            The standard markup language used to create web pages.<br>
+            <b>CSS</b> : Cascading Style Sheets<br>
+            Style sheet language used for describing the look and formatting of a document written in a markup language.<br>
+            <b>DOM</b> : Document Object Model<br>
+            A cross-platform and language-independent convention for representing and interacting with objects(Markup languages) in HTML .
+            The nodes of every document are organized in a tree structure, called the DOM tree.
+          </p>
+          <ul>
+            <li>Html has specific syntax and rules.</li>
+            <li>Basic word in html language is <em>tag</em>.</li>
+            <li>The Browser turns html tags into elements that form a tree.</li>
+            <li>It knows how to do that because of document model DOM.</li>
+            <li>DOM is a standard convention for representing and interacting in HTML.</li>
+            <li>So the tree in developer tools in chrome browser is dom tree the browser built from an HTML ducument.</li>
+            <li>Each html tag creates an element in DOM that the browser uses to display the page.</li>
+          </ul>
+          <p>
+            An element is created from starting tag to ending tag and everything in between is <em>content</em>.<br>
+            &lt;tag&gt;  content   &lt;/tag&gt;<br>
+            Syntax: opening tag     content       closing tag<br>
+            The <em>content</em> can be empty, it can be <em>text</em> or <em>element</em>.
+            Each tag has a name or type that defines what kind of element will be created.
+            I.e will it be a paragraph?, An image?, Or Just a document division..?
+            Each tag also can have attributes with values.<br>
+            Syntax: &lt;h1 class = "article"&gt;   &lt;/h1&gt;
+            <!--   <h1 class = "article">   </h1>   -->
+            For example above we have an h1 tag with a class <em>attribute</em> and value of the attribute is <em>article</em>.
+            So the document written in HTML defines the structure and content of the page.
+          </p>
+        </div>
+      </div>
+    </div>
+
+  <footer class= "tm-footer">
+    &copy;copyright Alivelu 2017
+  </footer>
+  <p>
+    <small> Written by Alivelu Duvvuri</small>
+  </p>
+  <!--Closing body tag-->
+   <!-- Closing HTML tag-->
+  <!--Note:If you closely observe above steps you can understand that the indentation level increases when an idea begins and decreases when an idea is finished-->
+</body>
+</html>
