@@ -1,1 +1,47 @@
+Your project is to create a web page that shows off all the skills you've learned so far! You can make your web page on any topic you'd like.
+
+Project should contain:
+
+An HTML file
+A CSS file
+Any images or other files that are a part of your web page
+
+All of your styling is done using a separate (linked) CSS file
+
+Before submitting your project, go to these validators and check your HTML and CSS files for validation errors:
+
+HTML Validator
+CSS Validator
+
+Your page demonstrates how to use HTML to structure text
+Each section should have:
+A title that is formatted with a heading element (<h1>, <h2>, etc.)
+At least one paragraph of text, enclosed within a paragraph element (<p>)
+
+Your page demonstrates how to use container elements
+To be specific:
+Your HTML file needs to contain at least 3 <div> container elements.
+Each <div> element should contain multiple conceptually related pieces of content (like a title, paragraph, and image that are all about the same thing).
+Each <div> element should have a class applied to it.
+Task List
+
+Your page demonstrates how to use CSS selectors
+Here’s a reminder of what a CSS selector looks like:
+p {
+}
+
+7. Your page demonstrates use of the class attribute and class selectors
+If you want to apply a style to all of a particular kind of elements on your page, you can use an element selector, like the one we just showed above (which applies a style to all <p> elements).
+But if you only want to apply a style to certain elements (such as making only some of your <p> elements a particular color), then you can use a class selector. Remember, that looks something like this:
+.myclassname {
+}
+
+8. Your page demonstrates the use of images
+Make sure that:
+Your page uses the <img> tag to display at least one image.
+The <img> element includes alternative text (using the alt attribute) that describes the image.
+
+our page demonstrates the use of hyperlinks
+Make sure that your page uses the <a> element to provide at least one hyperlink to another page.
+
 
