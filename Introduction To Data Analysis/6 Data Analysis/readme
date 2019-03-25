@@ -1,1 +1,19 @@
 
+Introduction
+For the final project, you will conduct your own data analysis and create a file to share that documents your findings. 
+You should start by taking a look at your dataset and brainstorming what questions you could answer using it. 
+Then you should use Pandas and NumPy to answer the questions you are most interested in, and create a report sharing the answers. You will not be required to use statistics or machine learning to complete this project, but you should make it clear in your communications that your findings are tentative. This project is open-ended in that we are not looking for one right answer.
+
+Step One - Choose Your Data Set
+Step Two - Get Organized
+The report communicating your findings
+Any Python code you wrote as part of your analysis
+The data set you used (which you will not need to submit)
+You may wish to use Jupyter notebook, in which case you can submit both the code you wrote and the report of your findings in the same document. Otherwise, you will need to submit your report and code separately.
+
+Step Three - Analyze Your Data
+
+Step Four - Share Your Findings
+
+Step Five - Review
+Use the Project Rubric to review your project. If you are happy with your submission, then you're ready to submit your project. 
